@@ -24,7 +24,7 @@ public class FieldEntity {
 
 
     @ManyToOne(targetEntity = FieldsEntity.class)
-    @JoinColumn(name = "idField")
+    @JoinColumn(name = "idFields")
     @JsonManagedReference
     private FieldsEntity idFields;
 

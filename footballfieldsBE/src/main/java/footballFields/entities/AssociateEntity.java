@@ -33,11 +33,11 @@ public class AssociateEntity {
 
     @ManyToOne(targetEntity = FieldsEntity.class)
     @JoinColumn(name = "id_fields")
-//    @JsonManagedReference
+    @JsonManagedReference
     private FieldsEntity idFields;
 
     @OneToMany(mappedBy = "idAssociate")
-//    @JsonManagedReference
+   @JsonManagedReference
     private List<BookingEntity> bookings = new ArrayList<>();
 
 

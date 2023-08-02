@@ -21,12 +21,12 @@ public class BookingEntity {
     private String time;
 
     @ManyToOne(targetEntity = FieldEntity.class)
-    @JoinColumn(name = "id_field")
+    @JoinColumn(name = "idField")
     @JsonBackReference
     private FieldEntity idField;
 
     @ManyToOne(targetEntity = AssociateEntity.class)
-    @JoinColumn(name = "id_associate")
+    @JoinColumn(name = "idAssociate")
     @JsonBackReference
     private AssociateEntity idAssociate;
 
